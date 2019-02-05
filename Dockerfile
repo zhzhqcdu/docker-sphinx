@@ -1,5 +1,5 @@
 FROM python:3.6
-RUN pip install sphinx sphinx-autobuild recommonmark sphinx_rtd_theme graphviz
+RUN pip install sphinx sphinx-autobuild recommonmark sphinx_rtd_theme Graphviz sphinxcontrib-plantuml
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 CMD mkdir /docs
 WORKDIR /docs
